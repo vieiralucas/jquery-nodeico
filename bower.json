@@ -1,16 +1,17 @@
 {
-  "name": "jquery-nodemodule",
-  "version": "0.2.2",
-  "homepage": "https://github.com/vieiralucas/jquery-nodemodule",
+  "name": "jquery-nodeico",
+  "version": "0.3.0",
+  "homepage": "https://github.com/vieiralucas/jquery-nodeico",
   "authors": [
     "Lucas Vieira <vieiralucas4@gmail.com>"
   ],
   "description": "A jQuery plugin to display your Node Modules on NPM.",
-  "main": "dist/jquery.nodemodule.min.js",
+  "main": "dist/jquery.nodeico.min.js",
   "keywords": [
     "jquery",
-    "jquery-nodemodule",
-    "nodemodule",
+    "jquery-nodeico",
+    "nodeico",
+    "node",
     "npm"
   ],
   "license": "MIT",

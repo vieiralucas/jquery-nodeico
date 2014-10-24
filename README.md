@@ -4,9 +4,9 @@
 
 Three quick start options are available:
 
-* [Download latest release](https://github.com/vieiralucas/jquery-nodemodule/releases)
-* Clone the repo: `git@github.com:vieiralucas/jquery-nodemodule.git`
-* Install with [Bower](http://bower.io): `bower install jquery-nodemodule`
+* [Download latest release](https://github.com/vieiralucas/jquery-nodeico/releases)
+* Clone the repo: `git@github.com:vieiralucas/jquery-nodeico.git`
+* Install with [Bower](http://bower.io): `bower install jquery-nodeico`
 
 ## Setup
 
@@ -35,24 +35,24 @@ Include jQuery:
 Include plugin's JS:
 
 ```html
-<script src="jquery.nodemodule.min.js"></script>
+<script src="jquery.nodeico.min.js"></script>
 ```
 
 Call the plugin:
 
 ```javascript
-$("#example").nodeModule();
+$("#example").nodeico();
 ```
 
 
-[Check full example's source code](https://github.com/vieiralucas/jquery-nodemodule/blob/master/demo/index.html).
+[Check full example's source code](https://github.com/vieiralucas/jquery-nodeico/blob/master/demo/index.html).
 
 ## Options
 
 Here's a list of available settings.
 
 ```javascript
-$("#example").nodeModule({
+$("#example").nodeico({
     name: 'some-node-module',
     type:  'standard',
     downloads:  true,
@@ -63,7 +63,7 @@ $("#example").nodeModule({
 
 | Attribute | Type      | Default             | Description                                           |
 |-----------|-----------|---------------------|-------------------------------------------------------|
-| name      | *String*  | `jquery-nodemodule` | The name of the node module.                          |
+| name      | *String*  | `jquery-nodeico` | The name of the node module.                          |
 | type      | *String*  | `standard`          | How is the badge ('standard', 'mini', 'compact').     |
 | downloads | *Boolean* | `false`             | Displays the number of downloads that the module has. |
 | rank      | *Boolean* | `false`             | Displays the download rank of the module.             |

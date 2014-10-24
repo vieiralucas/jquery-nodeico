@@ -1,5 +1,5 @@
 /*
- *  jQuery NodeModule - v0.2.1
+ *  jQuery Nodeico - v0.3.0
  *  A jQuery plugin to display your Node Modules on NPM.
  *  http://gitub.com/vieiralucas/jquery-nodemodule
  *
@@ -20,9 +20,9 @@
 		// minified (especially when both are regularly referenced in your plugin).
 
 		// Create the defaults once
-		var pluginName = 'nodeModule',
+		var pluginName = 'nodeico',
 			defaults = {
-				name: 'jquery-nodemodule',
+				name: 'jquery-nodeico',
 				type: 'standard', //compact, mini
 				downloads: false,
 				rank: false,
@@ -30,7 +30,7 @@
 			};
 
 		// The actual plugin constructor
-		function NodeModule ( element, options ) {
+		function Nodeico ( element, options ) {
 				this.element = element;
 				this.options = $.extend( {}, defaults, options );
 				this._defaults = defaults;
@@ -39,7 +39,7 @@
 				this.init();
 		}
 
-		NodeModule.prototype = {
+		Nodeico.prototype = {
 				init: function () {
 					var img = document.createElement('img');
 					img.src = this.url;
@@ -82,7 +82,7 @@
 		$.fn[ pluginName ] = function ( options ) {
 				return this.each(function() {
 						if ( !$.data( this, 'plugin_' + pluginName ) ) {
-								$.data( this, 'plugin_' + pluginName, new NodeModule( this, options ) );
+								$.data( this, 'plugin_' + pluginName, new Nodeico( this, options ) );
 						}
 				});
 		};

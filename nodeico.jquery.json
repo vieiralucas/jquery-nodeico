@@ -1,6 +1,6 @@
 {
-	"name": "nodemodule",
-	"title": "jQuery NodeModule",
+	"name": "nodeico",
+	"title": "jQuery Nodeico",
 	"description": "A jQuery plugin to display your Node Modules on NPM.",
 	"keywords": [
 		"jquery",
@@ -10,7 +10,7 @@
 		"npm",
 		"plugins"
 	],
-	"version": "0.2.2",
+	"version": "0.3.0",
 	"author": {
 		"name": "Lucas Vieira",
 		"email": "vieiralucas4@gmail.com",
