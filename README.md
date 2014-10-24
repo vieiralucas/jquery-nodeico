@@ -61,13 +61,13 @@ $("#example").nodeModule({
 });
 ```
 
-| Attribute | Type      | Default    | Description                                           |
-|-----------|-----------|------------|-------------------------------------------------------|
-| name      | *String*  | ``         | The name of the node module.                          |
-| type      | *String*  | `standard` | How is the badge ('standard', 'mini', 'compact').     |
-| downloads | *Boolean* | `false`    | Displays the number of downloads that the module has. |
-| rank      | *Boolean* | `false`    | Displays the download rank of the module.             |
-| stars     | *Boolean* | `false`    | Displays the number of stars that the module has.     |
+| Attribute | Type      | Default             | Description                                           |
+|-----------|-----------|---------------------|-------------------------------------------------------|
+| name      | *String*  | `jquery-nodemodule` | The name of the node module.                          |
+| type      | *String*  | `standard`          | How is the badge ('standard', 'mini', 'compact').     |
+| downloads | *Boolean* | `false`             | Displays the number of downloads that the module has. |
+| rank      | *Boolean* | `false`             | Displays the download rank of the module.             |
+| stars     | *Boolean* | `false`             | Displays the number of stars that the module has.     |
 
 
 ## Credits

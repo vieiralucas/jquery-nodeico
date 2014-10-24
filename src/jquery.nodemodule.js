@@ -14,7 +14,7 @@
 		// Create the defaults once
 		var pluginName = 'nodeModule',
 			defaults = {
-				name: '',
+				name: 'jquery-nodemodule',
 				type: 'standard', //compact, mini
 				downloads: false,
 				rank: false,
