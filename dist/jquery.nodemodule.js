@@ -1,5 +1,5 @@
 /*
- *  jQuery NodeModule - v0.0.1
+ *  jQuery NodeModule - v0.2.1
  *  A jQuery plugin to display your Node Modules on NPM.
  *  http://gitub.com/vieiralucas/jquery-nodemodule
  *
@@ -22,7 +22,7 @@
 		// Create the defaults once
 		var pluginName = 'nodeModule',
 			defaults = {
-				name: '',
+				name: 'jquery-nodemodule',
 				type: 'standard', //compact, mini
 				downloads: false,
 				rank: false,
