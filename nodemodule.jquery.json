@@ -1,5 +1,5 @@
 {
-	"name": "jquery-nodemodule",
+	"name": "nodemodule",
 	"title": "jQuery NodeModule",
 	"description": "A jQuery plugin to display your Node Modules on NPM.",
 	"keywords": [
