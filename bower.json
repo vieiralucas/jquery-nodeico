@@ -1,0 +1,27 @@
+{
+  "name": "jquery-nodemodule",
+  "version": "0.0.1",
+  "homepage": "https://github.com/vieiralucas/jquery-nodemodule",
+  "authors": [
+    "Lucas Vieira <vieiralucas4@gmail.com>"
+  ],
+  "description": "A jQuery plugin to display your Node Modules on NPM.",
+  "main": "dist/jquery.nodemodule.min.js",
+  "keywords": [
+    "jquery",
+    "jquery-nodemodule",
+    "nodemodule",
+    "npm"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
