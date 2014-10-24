@@ -4,7 +4,7 @@
 	"description": "A jQuery plugin to display your Node Modules on NPM.",
 	"author": "Lucas Vieira",
 	"homepage": "https://github.com/vieiralucas/jquery-nodemodule/",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"devDependencies": {
 		"grunt": "~0.4.1",
 		"grunt-cli": "~0.1.7",

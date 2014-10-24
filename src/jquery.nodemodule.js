@@ -15,12 +15,10 @@
 		var pluginName = 'nodeModule',
 			defaults = {
 				name: '',
-				style: 'standard', //compact, mini
-				options: {
-					downloads: false,
-					rank: false,
-					starts: false
-				}
+				type: 'standard', //compact, mini
+				downloads: false,
+				rank: false,
+				stars: false
 			};
 
 		// The actual plugin constructor
@@ -40,14 +38,32 @@
 					this.element.appendChild(img);
 				},
 				makeUrl: function() {
-					var url = 'https://nodei.co/npm/' + this.options.name + '.png';
-					switch (this.options.style) {
+					var url = 'https://nodei.co/npm/' + this.options.name + '.png',
+						standard = false,
+						first = true;
+					switch (this.options.type) {
 						case 'compact':
 							url += '?compact=true';
 							break;
 						case 'mini':
 							url += '?mini=true';
 							break;
+						default:
+							standard = true;
+					}
+					if(standard) {
+						if(this.options.downloads) {
+							first ? url += '?downloads=true' : url += '&downloads=true';
+							first = false;
+						}
+						if(this.options.rank) {
+							first ? url += '?downloadRank=true' : url += '&downloadRank=true';
+							first = false;
+						}
+						if(this.options.stars) {
+							first ? url += '?stars=true' : url += '&stars=true';
+							first = false;
+						}
 					}
 					return url;
 				}
