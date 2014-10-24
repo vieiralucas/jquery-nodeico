@@ -20,6 +20,8 @@ Now you're ready to go!
 
 ## Usage
 
+HTML
+
 ```html
 <div id="example"></div>
 ```
@@ -42,7 +44,6 @@ Call the plugin:
 $("#example").nodeModule();
 ```
 
-And that's it \o/
 
 [Check full example's source code](https://github.com/vieiralucas/jquery-nodemodule/blob/master/demo/index.html).
 
