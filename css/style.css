@@ -1,0 +1,59 @@
+body {
+    background: #EEE;
+    font-size: 20px;
+    font-family: 'MuseoSlab500Regular', sans-serif;
+    padding: 0 2em;
+}
+
+section {
+    width: 100%;
+    clear: both;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.title {
+    padding: .5em 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #555;
+}
+
+.title p {
+    font-size: 0.3em;
+    color: #000;
+    font-weight: normal;
+}
+
+.example {
+    float: left;
+    padding: 4% 4%;
+    margin: auto;
+    width: 42%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.example img {
+    display: block;
+    margin: auto;
+}
+
+.code {
+}
+
+pre {
+    margin: auto;
+    float: left;
+    padding: 0 2%;
+    width: 46%;
+}
+
+code {
+    border-radius: 10px;
+    font-size: .7em;
+}

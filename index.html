@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Nodeico</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/highlight-monokai.css">
+</head>
+<body>
+    <header class="title">
+        jQuery Nodeico
+        <p>A jQuery plugin to display your Node Modules on NPM.</p>
+    </header>
+    
+    <div class="container">
+        <section>
+            <pre>
+                <code class="javascript">
+$('#example1').nodeico({
+    name: 'express',
+    downloads: true,
+    rank: true,
+    stars: true
+});    
+                </code>
+            </pre>
+            <div id="example1" class="example"></div>
+        </section>
+
+        <section>
+            <pre>
+                <code class="javascript">
+$('#example2').nodeico({
+    name: 'express',
+}); 
+                </code>
+            </pre>
+            <div id="example2" class="example"></div>
+        </section>
+        <section>
+            <pre>
+                <code class="javascript">
+$('#example3').nodeico({
+    name: 'express',
+    type: 'compact'
+}); 
+                </code>
+            </pre>
+            <div id="example3" class="example"></div>
+        </section>
+        <section>
+            <pre>
+                <code class="javascript">
+$('#example4').nodeico({
+    name: 'express',
+    type: 'mini'
+});
+                </code>
+            </pre>
+            <div id="example4" class="example"></div>
+        </section>
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nodeico.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+
+    <script type="text/javascript">
+    $(function() {
+        $('#example1').nodeico({
+            name: 'express',
+            downloads: true,
+            rank: true,
+            stars: true
+        });
+        $('#example2').nodeico({
+            name: 'express',
+        });
+        $('#example3').nodeico({
+            name: 'express',
+            type: 'compact'
+        });
+        $('#example4').nodeico({
+            name: 'express',
+            type: 'mini'
+        });
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+    })
+    </script>
+
+</body>
+</html>
