@@ -1,10 +1,10 @@
 {
-	"name": "jquery-nodemodule",
-	"title": "jQuery NodeModule",
+	"name": "jquery-nodeico",
+	"title": "jQuery Nodeico",
 	"description": "A jQuery plugin to display your Node Modules on NPM.",
 	"author": "Lucas Vieira",
-	"homepage": "https://github.com/vieiralucas/jquery-nodemodule/",
-	"version": "0.3.0",
+	"homepage": "https://github.com/vieiralucas/jquery-nodeico/",
+	"version": "0.3.1",
 	"devDependencies": {
 		"grunt": "~0.4.1",
 		"grunt-cli": "~0.1.7",
