@@ -23,10 +23,12 @@
 		var pluginName = 'nodeico',
 			defaults = {
 				name: 'jquery-nodeico',
-				type: 'standard', //compact, mini
+				type: 'standard', // compact, mini, histogram
 				downloads: false,
 				rank: false,
-				stars: false
+				stars: false,
+				months: 1, // 12, 9, 6, 3, 1
+				height: 1 // 1, 2, 3
 			};
 
 		// The actual plugin constructor
@@ -48,6 +50,7 @@
 				makeUrl: function() {
 					var url = 'https://nodei.co/npm/' + this.options.name + '.png',
 						standard = false,
+						histogram = false,
 						first = true;
 					switch (this.options.type) {
 						case 'compact':
@@ -56,8 +59,12 @@
 						case 'mini':
 							url += '?mini=true';
 							break;
-						default:
+						case 'standard':
 							standard = true;
+							break;
+						case 'histogram':
+							histogram = true;
+							break;
 					}
 					if(standard) {
 						if(this.options.downloads) {
@@ -72,6 +79,9 @@
 							first ? url += '?stars=true' : url += '&stars=true';
 							first = false;
 						}
+					} else if(histogram) {
+						url = url.replace('npm', 'npm-dl');
+						url += '?months=' + this.options.months + '&height=' + this.options.height;
 					}
 					return url;
 				}
