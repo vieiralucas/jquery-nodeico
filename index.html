@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="css/highlight-monokai.css">
 </head>
 <body>
-
-    <a href="https://github.com/vieiralucas/jquery-nodeico"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/a6677b08c955af8400f44c6298f40e7d19cc5b2d/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png"></a>
-
     <header class="title">
         jQuery Nodeico
         <p>A jQuery plugin to display your Node Modules on NPM.</p>
@@ -62,6 +59,19 @@ $('#example4').nodeico({
             </pre>
             <div id="example4" class="example"></div>
         </section>
+        <section>
+            <pre>
+                <code class="javascript">
+$('#example5').nodeico({
+    name: 'express',
+    type: 'histogram',
+    months: 9,
+    height: 2
+});
+                </code>
+            </pre>
+            <div id="example5" class="example"></div>
+        </section>
 
     </div>
 
@@ -87,6 +97,12 @@ $('#example4').nodeico({
         $('#example4').nodeico({
             name: 'express',
             type: 'mini'
+        });
+        $('#example5').nodeico({
+            name: 'express',
+            type: 'histogram',
+            months: 9,
+            height: 2
         });
         $('pre code').each(function(i, block) {
             hljs.highlightBlock(block);
