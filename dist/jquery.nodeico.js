@@ -1,5 +1,5 @@
 /*
- *  jQuery Nodeico - v0.3.2
+ *  jQuery Nodeico - v0.4.0
  *  A jQuery plugin to display your Node Modules on NPM.
  *  http://gitub.com/vieiralucas/jquery-nodemodule
  *
