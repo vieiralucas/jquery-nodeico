@@ -64,10 +64,12 @@ $("#example").nodeico({
 | Attribute | Type      | Default             | Description                                           |
 |-----------|-----------|---------------------|-------------------------------------------------------|
 | name      | *String*  | `jquery-nodeico` | The name of the node module.                          |
-| type      | *String*  | `standard`          | How is the badge ('standard', 'mini', 'compact').     |
+| type      | *String*  | `standard`          | How is the badge ('standard', 'mini', 'compact', 'histogram').     |
 | downloads | *Boolean* | `false`             | Displays the number of downloads that the module has. |
 | rank      | *Boolean* | `false`             | Displays the download rank of the module.             |
 | stars     | *Boolean* | `false`             | Displays the number of stars that the module has.     |
+| months    | *Number*  | `1`                 | How many months ago should display ('12', '9', '6', '3', '1').                  |
+| height    | *Number*  | `1`                 | The height of the histograms, there are 3 heights ('1', '2', '3') |
 
 
 ## Credits
