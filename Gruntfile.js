@@ -1,6 +1,10 @@
 module.exports = function(grunt) {
 
+	// load grunt-contrib-copy
 	grunt.loadNpmTasks('grunt-contrib-copy');
+
+	// load grunt-gh-pages
+	grunt.loadNpmTasks('grunt-gh-pages');
 
 	grunt.initConfig({
 
@@ -55,6 +59,14 @@ module.exports = function(grunt) {
 		    src: 'dist/jquery.nodeico.min.js',
 		    dest: 'demo/js/jquery.nodeico.min.js',
 		  },
+		},
+
+		// gh-pages definitions
+		'gh-pages': {
+			options: {
+				base: 'demo'
+			},
+			src: ['**']
 		}
 
 	});
