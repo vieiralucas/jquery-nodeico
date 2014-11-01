@@ -1,5 +1,7 @@
 module.exports = function(grunt) {
 
+	grunt.loadNpmTasks('grunt-contrib-copy');
+
 	grunt.initConfig({
 
 		// Import package manifest
@@ -47,13 +49,21 @@ module.exports = function(grunt) {
 			}
 		},
 
+		// Copy definitions		
+		copy: {
+		  main: {
+		    src: 'dist/jquery.nodeico.min.js',
+		    dest: 'demo/js/jquery.nodeico.min.js',
+		  },
+		}
+
 	});
 
 	grunt.loadNpmTasks("grunt-contrib-concat");
 	grunt.loadNpmTasks("grunt-contrib-jshint");
 	grunt.loadNpmTasks("grunt-contrib-uglify");
 
-	grunt.registerTask("default", ["jshint", "concat", "uglify"]);
+	grunt.registerTask("default", ["jshint", "concat", "uglify", "copy"]);
 	grunt.registerTask("travis", ["jshint"]);
 
 };
